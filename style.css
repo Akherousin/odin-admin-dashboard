@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-primary: blue;
+  --color-headings: black;
+  --color-general-text: #999;
+  --color-secondary: white;
+  --color-tertiary: aliceblue;
+
+  --shadow-small: -1px 17px 10px -15px rgba(0, 0, 0, 0.1);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -18,10 +28,33 @@ body {
   grid-template-areas:
     "aside header header"
     "aside main main";
+
+  background-color: var(--color-tertiary);
 }
 
 .header {
   grid-area: header;
+  display: grid;
+  gap: 3.2rem;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr;
+  background-color: var(--color-secondary);
+  padding: 2.4rem 3.2rem;
+  box-shadow: var(--shadow-small);
+}
+
+.header-search-bar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  place-content: center;
+  gap: 1rem;
+}
+
+.search-input {
+  appearance: none;
+  background-color: var(--color-tertiary);
+  border: none;
+  border-radius: 100rem;
 }
 
 .side-menu {
