@@ -96,6 +96,23 @@ body {
   font-size: 1.6rem;
 }
 
+.header-btns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+
+.header-btn {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 100rem;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  cursor: pointer;
+  text-align: center;
+}
+
 .side-menu {
   grid-area: aside;
 }
