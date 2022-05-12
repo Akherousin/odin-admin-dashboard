@@ -50,6 +50,28 @@ body {
   gap: 1rem;
 }
 
+.header-user-info {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-bell {
+  flex-basis: 2.8rem;
+  flex-shrink: 0;
+}
+
+.user-info-avatar {
+  width: 5.4rem;
+}
+
+.user-info-name {
+  font-weight: bold;
+  flex-shrink: 0;
+  font-size: 1.8rem;
+}
+
 .search-input {
   appearance: none;
   background-color: var(--color-tertiary);
