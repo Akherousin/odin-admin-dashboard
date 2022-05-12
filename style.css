@@ -7,7 +7,7 @@
 }
 
 :root {
-  --color-primary: blue;
+  --color-primary: rgb(118, 149, 227);
   --color-headings: black;
   --color-general-text: #999;
   --color-secondary: white;
@@ -115,6 +115,30 @@ body {
 
 .side-menu {
   grid-area: aside;
+  padding: 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.side-menu-heading {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-icon {
+  width: 5.4rem;
+}
+
+.heading-secondary {
+  font-size: 3.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.nav-list {
+  list-style-type: none;
 }
 
 .main {
