@@ -139,6 +139,22 @@ body {
 
 .nav-list {
   list-style-type: none;
+  display: grid;
+  gap: 2rem;
+}
+
+.nav-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1.8rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-item svg {
+  margin-left: 1rem;
 }
 
 .main {
