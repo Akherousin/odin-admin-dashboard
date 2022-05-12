@@ -158,7 +158,26 @@ body {
 }
 
 .main {
+  padding: 2.4rem 3.2rem;
   grid-area: main;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
+}
+
+.main-projects {
+  grid-area: projects;
+}
+
+.main-announcements {
+  grid-area: announcements;
+}
+
+.trending {
+  grid-area: trending;
 }
 
 img {
