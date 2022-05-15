@@ -172,6 +172,22 @@ body {
   grid-area: projects;
 }
 
+.project-cards {
+  display: grid;
+  list-style: none;
+  gap: 1.5rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+.project-card {
+  border-radius: 10px;
+  background-color: var(--color-secondary);
+  box-shadow: var(--shadow-small);
+
+  padding: 1.2rem;
+}
+
 .main-announcements {
   grid-area: announcements;
 }
