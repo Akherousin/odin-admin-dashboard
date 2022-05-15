@@ -161,6 +161,7 @@ body {
   padding: 2.4rem 3.2rem;
   grid-area: main;
   display: grid;
+  gap: 50px;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   grid-template-areas:
@@ -181,7 +182,7 @@ body {
   list-style: none;
   gap: 1.5rem;
 
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 }
 
 .project-card {
@@ -190,6 +191,7 @@ body {
   box-shadow: var(--shadow-small);
 
   padding: 2.4rem;
+
   height: 15rem;
   display: grid;
   gap: 10px;
@@ -204,6 +206,32 @@ body {
 
 .main-announcements {
   grid-area: announcements;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.announcements-list {
+  list-style: none;
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  padding: 0 2.4rem;
+  display: grid;
+  box-shadow: var(--shadow-small);
+}
+
+.announcement-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.announcement-item:first-of-type {
+  margin-top: 0;
+}
+
+.announcement-item:not(:last-of-type) {
+  border-bottom: 1px solid black;
 }
 
 .trending {
