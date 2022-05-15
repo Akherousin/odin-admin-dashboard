@@ -182,7 +182,7 @@ body {
   list-style: none;
   gap: 1.5rem;
 
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
 .project-card {
@@ -192,7 +192,7 @@ body {
 
   padding: 2.4rem;
 
-  height: 15rem;
+  height: 20rem;
   display: grid;
   gap: 10px;
 }
@@ -236,6 +236,31 @@ body {
 
 .trending {
   grid-area: trending;
+}
+
+.trending-list {
+  list-style: none;
+  display: grid;
+  gap: 15px;
+
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  padding: 2.4rem;
+  box-shadow: var(--shadow-small);
+}
+
+.trending-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "pic name" "pic project";
+  align-items: center;
+  column-gap: 10px;
+}
+
+.trending-img {
+  width: 5.4rem;
+  grid-area: pic;
 }
 
 img {
